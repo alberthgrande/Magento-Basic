@@ -122,8 +122,8 @@ php bin/magento setup:install --base-url="http://dev.magento.com/" --db-host="lo
     php bin/magento cache:clean full_page
     
 # Command Setup
-- php bin/magento setup:upgrade
-- php bin/magento setup:static-content:deploy -f
-- php bin/magento cache:flush
-- php bin/magento cache:clean
-- php -f bin/magento cache:flush layout block_html
+    php bin/magento setup:upgrade
+    php bin/magento setup:static-content:deploy -f
+    php bin/magento cache:flush
+    php bin/magento cache:clean
+    php -f bin/magento cache:flush layout block_html
