@@ -1,6 +1,6 @@
 # Magento Basic
 
-    - Magento Basic Version 2.4.5
+    - Magento Basic Version 2.4.6
 
 ## Process
 
@@ -8,6 +8,12 @@
     - Download and Install xampp php v.8
     - Download and Install composer
     - Download Elastic Search and extract to C:\xampp\htdocs
+
+## Download Links
+[Git Bash](https://git-scm.com/downloads)
+[XAMPP]([https://git-scm.com/downloads](https://www.apachefriends.org/))
+[Composer]([https://git-scm.com/downloads](https://getcomposer.org/))
+[Elastic Search](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.3-windows-x86_64.zip)
 
 ## XAMPP Enable PHP extensions and Configure (php.ini)
 
@@ -25,7 +31,7 @@
 
 ## Download Magento Command
 
-    - composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.4.5
+    - composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.4.6
 
 ## Authentication required repo.magento.com:
 
@@ -47,7 +53,7 @@
     - Run Elastic search,
     - Xampp apache and mysql
 
-## Goto
+## Goto File
 
     - C:\xampp\htdocs\project-community-edition\vendor\magento\framework\Image\Adapter\Gd2.php
 
@@ -70,6 +76,13 @@
         Replace with this code:
 
         $realPath = str_replace('\\', '/', $this->fileDriver->getRealPath($path));
+        
+
+    - C:\xampp\htdocs\SDSolutions\Projects\magento\project-community-edition\vendor\magento\framework\Interception\PluginListGenerator.php
+    
+        "$cacheId = implode('|', $this->scopePriorityScheme) . "|" . $this->cacheId;" 
+         with
+        "$cacheId = implode('-', $this->scopePriorityScheme) . "-" . $this->cacheId;"
 
 ## Add entry in host files:
 
@@ -93,7 +106,7 @@
 ## Magento SETUP
 
 ```
-php bin/magento setup:install --base-url="http://dev.magento.com/" --db-host="localhost" --db-name="magento_2.4.5" --db-user="root" --db-password="" --admin-firstname="admin" --admin-lastname="admin" --admin-email="user@example.com" --admin-user="admin" --admin-password="admin@12345" --language="en_US" --currency="USD" --timezone="America/Chicago" --use-rewrites="1" --backend-frontname="admin" --search-engine=elasticsearch7 --elasticsearch-host="localhost" --elasticsearch-port=9200
+php bin/magento setup:install --base-url="http://dev.magento.com/" --db-host="localhost" --db-name="magento246" --db-user="root" --db-password="" --admin-firstname="admin" --admin-lastname="admin" --admin-email="user@example.com" --admin-user="admin" --admin-password="admin@12345" --language="en_US" --currency="USD" --timezone="America/Chicago" --use-rewrites="1" --backend-frontname="admin" --search-engine=elasticsearch7 --elasticsearch-host="localhost" --elasticsearch-port=9200
 ```
 
 ## Replace Line In app/etc/di.xml in magento file path
@@ -106,7 +119,7 @@ php bin/magento setup:install --base-url="http://dev.magento.com/" --db-host="lo
 
 ## Disable extension:
 
-    php bin/magento module:disable Magento_TwoFactorAuth
+    php bin/magento module:disable Magento_AdminAdobeImsTwoFactorAuth Magento_TwoFactorAuth
     php bin/magento cache:flush
 
 ## Run These Magento Commands:
