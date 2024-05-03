@@ -10,11 +10,12 @@
     - Download Elastic Search and extract to C:\xampp\htdocs
 
 ## Download Links
-
-[Git Bash](https://git-scm.com/downloads) <br />
-[Elastic Search](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.3-windows-x86_64.zip) <br />
-[XAMPP](https://www.apachefriends.org/) <br />
-[Composer](https://getcomposer.org/) <br />
+<ul>
+    <li>[Git Bash](https://git-scm.com/downloads)</li>
+    <li>[Elastic Search](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.3-windows-x86_64.zip)</li>
+    <li>[XAMPP](https://www.apachefriends.org/)</li>
+    <li>[Composer](https://getcomposer.org/) </li>
+</ul>
 
 ## XAMPP Enable PHP extensions and Configure (php.ini)
 
@@ -36,13 +37,15 @@
 
 ## Authentication required repo.magento.com:
 
-    - Create account Magento Marketplace in click the link below
+    - Create account Magento Marketplace
+<ul>
+    <li>Link : [Magento Marketplace](https://marketplace.magento.com/)</li>
+</ul>
 
-[Magento Marketplace](https://marketplace.magento.com/)
-
-    - Then goto My Profile click the link below
-
-[My Profile](https://marketplace.magento.com/customer/account/)
+    - Then goto My Profile
+<ul>
+    <li>Link : [My Profile](https://marketplace.magento.com/customer/account/)</li>
+</ul>
 
     - Click the Access Keys - Then Click the (Create A New Access Key) name it what you want.
 
@@ -54,7 +57,7 @@
     - Run Elastic search,
     - Xampp apache and mysql
 
-## Goto File
+## Goto File and Edit
 
     - C:\xampp\htdocs\project-community-edition\vendor\magento\framework\Image\Adapter\Gd2.php
 
