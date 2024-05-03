@@ -11,8 +11,11 @@
 
 ## Download Links
 [Git Bash](https://git-scm.com/downloads)
-[XAMPP]([https://git-scm.com/downloads](https://www.apachefriends.org/))
-[Composer]([https://git-scm.com/downloads](https://getcomposer.org/))
+
+[XAMPP](https://git-scm.com/downloads](https://www.apachefriends.org/)
+
+[Composer](https://git-scm.com/downloads](https://getcomposer.org/)
+
 [Elastic Search](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.3-windows-x86_64.zip)
 
 ## XAMPP Enable PHP extensions and Configure (php.ini)
