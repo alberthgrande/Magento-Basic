@@ -10,12 +10,11 @@
     - Download Elastic Search and extract to C:\xampp\htdocs
 
 ## Download Links
-<ul>
-    <li>[Git Bash](https://git-scm.com/downloads)</li>
-    <li>[Elastic Search](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.3-windows-x86_64.zip)</li>
-    <li>[XAMPP](https://www.apachefriends.org/)</li>
-    <li>[Composer](https://getcomposer.org/)</li>
-</ul>
+
+[Git Bash](https://git-scm.com/downloads) <br />
+[Elastic Search](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.3-windows-x86_64.zip) <br />
+[XAMPP](https://www.apachefriends.org/) <br />
+[Composer](https://getcomposer.org/) <br />
 
 ## XAMPP Enable PHP extensions and Configure (php.ini)
 
